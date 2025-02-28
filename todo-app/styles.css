@@ -1,0 +1,12 @@
+@import url('normalizer.css');
+
+header {
+    background-color: #50E3A4;
+}
+
+main {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+    background-color: aliceblue;
+}
