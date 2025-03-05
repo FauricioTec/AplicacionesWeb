@@ -1,12 +1,66 @@
-@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Roboto; /* Define la fuente del documento */
+    background-color: #F0EFE9;
+}
 
 header {
     background-color: #50E3A4;
+    color: #FFF;
+    display: flex; /* Hace que los elementos hijos se comporten como flex-items */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+    height: 175px; /* Define la altura del contenedor */
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 768px; /* Define el Define el ancho del contenedor */
+    width: 100%; /* Le indica al contenedor que ocupe todo el ancho disponible */
+}
+
+#task-counter {
+    font-size: 1.5em; /* Define el tamaño de la fuente */
+}
+
+#task-date {
+    text-align: right;
+}
+
+#task-date > span {
+    font-weight: 100; /* Define el grosor de la fuente */
 }
 
 main {
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
-    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+main > section {
+    padding: 20px 0px;
+    padding-bottom: 20px;
+    background: #FFF;
+    max-width: 768px;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.task:first-of-type {
+    border-top: 1px solid #CECECE;
+
+}
+
+.task {
+    padding: 15px 10px;
+    margin: 0px;
+    border-bottom: 1px solid #CECECE;
+}
+
+.task input[type="checkbox"] {
+    margin: 0 10px;
 }
