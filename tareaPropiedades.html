@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Properties</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark text-white">
+    <header>
+      <div class="container">
+        <div class="text-center mt-5 mb-4">
+          <h1 class="fw-bold">Propiedades CSS</h1>
+        </div>
+        <hr />
+      </div>
+    </header>
+    <main class="container my-5 px-5">
+      <div class="row">
+        <div class="col-md-3 d-none d-md-block">
+          <nav>
+            <h2>Propiedades</h2>
+            <ul>
+              <li><a href="#font-family">font-family</a></li>
+              <li><a href="#background-color">background-color</a></li>
+              <li><a href="#display">display</a></li>
+              <li><a href="#justify-content">justify-content</a></li>
+              <li><a href="#align-items">align-items</a></li>
+              <li><a href="#height">height</a></li>
+              <li><a href="#max-width">max-width</a></li>
+              <li><a href="#width">width</a></li>
+              <li><a href="#font-size">font-size</a></li>
+              <li><a href="#text-align">text-align</a></li>
+              <li><a href="#font-weight">font-weight</a></li>
+              <li><a href="#padding">padding</a></li>
+              <li><a href="#border-radius">border-radius</a></li>
+              <li><a href="#border">border</a></li>
+              <li><a href="#margin">margin</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <div class="table-responsive">
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Funcion</th>
+                  <th>Valores</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="font-family">
+                  <td>font-family</td>
+                  <td>Define la fuente del texto para un elemento</td>
+                  <td>
+                    <ul>
+                      <li>font</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="background-color">
+                  <td>background-color</td>
+                  <td>Define el color de fondo</td>
+                  <td>
+                    <ul>
+                      <li>color (name, hex, rgb, etc...)</li>
+                      <li>transparent</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="display">
+                  <td>display</td>
+                  <td>Define cómo se muestra o se visualiza un elemento</td>
+                  <td>
+                    <ul>
+                      <li>flex</li>
+                      <li>block</li>
+                      <li>inline</li>
+                      <li>grid</li>
+                      <li>table</li>
+                      <li>etc...</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="justify-content">
+                  <td>justify-content</td>
+                  <td>
+                    Alinea horizontalmente los elementos de un contenedor flex
+                  </td>
+                  <td>
+                    <ul>
+                      <li>flex-start</li>
+                      <li>flex-end</li>
+                      <li>center</li>
+                      <li>space-between</li>
+                      <li>space-around</li>
+                      <li>space-evenly</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="align-items">
+                  <td>align-items</td>
+                  <td>
+                    Alinea verticalmente los elementos de un contenedor flex o
+                    un grid
+                  </td>
+                  <td>
+                    <ul>
+                      <li>stretch</li>
+                      <li>flex-start</li>
+                      <li>flex-end</li>
+                      <li>start</li>
+                      <li>end</li>
+                      <li>center</li>
+                      <li>baseline</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="height">
+                  <td>height</td>
+                  <td>Define la altura del elemento</td>
+                  <td>
+                    <ul>
+                      <li>lenght (px, cm, etc...)</li>
+                      <li>auto</li>
+                      <li>%</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="max-width">
+                  <td>max-width</td>
+                  <td>Define el ancho máximo del elemento</td>
+                  <td>
+                    <ul>
+                      <li>none</li>
+                      <li>length (px, cm, etc...)</li>
+                      <li>%</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="width">
+                  <td>width</td>
+                  <td>Define el ancho del elemento</td>
+                  <td>
+                    <ul>
+                      <li>length (px, cm, etc...)</li>
+                      <li>auto</li>
+                      <li>%</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="font-size">
+                  <td>font-size</td>
+                  <td>Define el tamaño de la fuente</td>
+                  <td>
+                    <ul>
+                      <li>xx-small</li>
+                      <li>x-small</li>
+                      <li>small</li>
+                      <li>medium</li>
+                      <li>large</li>
+                      <li>x-large</li>
+                      <li>xx-large</li>
+                      <li>smaller</li>
+                      <li>larger</li>
+                      <li>length (px, em, rem, etc...)</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="text-align">
+                  <td>text-align</td>
+                  <td>Define la alineación del texto</td>
+                  <td>
+                    <ul>
+                      <li>left</li>
+                      <li>right</li>
+                      <li>center</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="font-weight">
+                  <td>font-weight</td>
+                  <td>Define el grosor de la fuente</td>
+                  <td>
+                    <ul>
+                      <li>normal</li>
+                      <li>bold</li>
+                      <li>bolder</li>
+                      <li>lighter</li>
+                      <li>100, 200, ..., 900</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="padding">
+                  <td>padding</td>
+                  <td>Define el espacio interior de un elemento</td>
+                  <td>
+                    <ul>
+                      <li>length (px, em, rem, etc...)</li>
+                      <li>%</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="border-radius">
+                  <td>border-radius</td>
+                  <td>Define el redondeo de los bordes</td>
+                  <td>
+                    <ul>
+                      <li>length (px, em, rem, etc...)</li>
+                      <li>%</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="border">
+                  <td>border</td>
+                  <td>Define el borde del elemento</td>
+                  <td>
+                    <ul>
+                      <li>border-width</li>
+                      <li>border-style</li>
+                      <li>border-color</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr id="margin">
+                  <td>margin</td>
+                  <td>Define el margen exterior de un elemento</td>
+                  <td>
+                    <ul>
+                      <li>length (px, em, rem, etc...)</li>
+                      <li>%</li>
+                      <li>auto</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anoInymous"
+    ></script>
+  </body>
+</html>
