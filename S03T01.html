@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Tarea 1 - Semana 3</title>
+  </head>
+  <body>
+    <main class="container my-5 px-5">
+      <article>
+        <h1 class="fw-bold">Display Flex vs Grid</h1>
+        <hr class="my-4" />
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Flex</th>
+                <th scope="col">Grid</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Características</th>
+                <td>
+                  <ul>
+                    <li>Modelo de diseño unidimensional (fila o columna).</li>
+                    <li>
+                      Facilita la distribución del espacio y la alineación de
+                      elementos dentro de un contenedor flexible.
+                    </li>
+                    <li>
+                      Los elementos flexibles pueden crecer o encogerse para
+                      ocupar el espacio disponible.
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Modelo de diseño bidimensional (filas y columnas).</li>
+                    <li>
+                      Permite la creación de diseños complejos mediante la
+                      definición de áreas en la cuadrícula.
+                    </li>
+                    <li>
+                      Ofrece control preciso sobre la colocación y el tamaño de
+                      los elementos en ambas dimensiones.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Diferencias</th>
+                <td>
+                  <ul>
+                    <li>Diseñado para layouts en una sola dimensión.</li>
+                    <li>
+                      Los elementos se alinean a lo largo de un eje principal
+                      definido.
+                    </li>
+                    <li>
+                      Mejor para la distribución de espacio entre elementos en
+                      una sola dirección.
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Diseñado para layouts en dos dimensiones.</li>
+                    <li>
+                      Permite la alineación y distribución de elementos en filas
+                      y columnas simultáneamente.
+                    </li>
+                    <li>
+                      Ideal para la creación de layouts más complejos y
+                      estructurados.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Casos de Uso</th>
+                <td>
+                  <ul>
+                    <li>
+                      Diseño de menús de navegación horizontales o verticales.
+                    </li>
+                    <li>Barra de herramientas o grupos de botones.</li>
+                    <li>
+                      Componentes que requieren distribución de espacio en una
+                      sola dirección.
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      Diseño de páginas completas con múltiples secciones.
+                    </li>
+                    <li>Galerías de imágenes o portafolios.</li>
+                    <li>
+                      Layouts que requieren una estructura en dos dimensiones
+                      con control preciso de filas y columnas.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center mt-3">
+          <h2>Ejemplos:</h2>
+        </div>
+        <h3>Flex</h3>
+        <ul class="nav nav-tabs mt-4" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="flex-code-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#flex-code"
+              type="button"
+              role="tab"
+              aria-controls="flex-code"
+              aria-selected="true"
+            >
+              Código
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="flex-preview-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#flex-preview"
+              type="button"
+              role="tab"
+              aria-controls="flex-preview"
+              aria-selected="false"
+            >
+              Vista previa
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content border p-3" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="flex-code"
+            role="tabpanel"
+            aria-labelledby="flex-code-tab"
+          >
+            <pre>
+                <code>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+            </code></pre>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="flex-preview"
+            role="tabpanel"
+            aria-labelledby="flex-preview-tab"
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <p class="m-5">Contenido centrado con Flexbox</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt-4">Grid</h3>
+        <ul class="nav nav-tabs mt-4" id="gridTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="grid-code-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#grid-code"
+              type="button"
+              role="tab"
+              aria-controls="grid-code"
+              aria-selected="true"
+            >
+              Código
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="grid-preview-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#grid-preview"
+              type="button"
+              role="tab"
+              aria-controls="grid-preview"
+              aria-selected="false"
+            >
+              Vista previa
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content border p-3" id="gridTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="grid-code"
+            role="tabpanel"
+            aria-labelledby="grid-code-tab"
+          >
+            <pre><code>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    </code></pre>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="grid-preview"
+            role="tabpanel"
+            aria-labelledby="grid-preview-tab"
+          >
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+              "
+            >
+              <div>Column</div>
+              <div>Column</div>
+              <div>Column</div>
+              <div>Column</div>
+              <div>Column</div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="fw-bold mt-5">Nomenclatura CSS</h1>
+        <hr class="my-4" />
+        <h2>Diferentes Propuestas para Nomenclatura CSS</h2>
+        <p>
+          Existen varias convenciones para nombrar clases en CSS. Algunas de las
+          más utilizadas son:
+        </p>
+        <ul>
+          <li>
+            <strong>Guiones (`-`):</strong> Utiliza guiones para separar
+            palabras (ejemplo: `.red-box`).
+          </li>
+          <li>
+            <strong>BEM (Block Element Modifier):</strong> Usa `__` para
+            elementos y `--` para modificadores (ejemplo: `.nav__header`,
+            `.nav--secondary`).
+          </li>
+          <li>
+            <strong>Prefijo `js-`:</strong> Indica elementos manipulados por
+            JavaScript (ejemplo: `.js-site-navigation`).
+          </li>
+          <li>
+            <strong>Uso del atributo `rel`:</strong> Define relaciones con
+            JavaScript usando `rel` en lugar de clases.
+          </li>
+          <li>
+            <strong>OOCSS (Object-Oriented CSS):</strong> Fomenta la
+            reutilización separando estructura y apariencia (ejemplo: `.button`
+            y `.is-primary`).
+          </li>
+          <li>
+            <strong>SMACSS (Scalable and Modular Architecture for CSS):</strong>
+            Clasifica reglas en cinco categorías: base, layout, módulo, estado y
+            tema.
+          </li>
+          <li>
+            <strong>SUIT CSS:</strong> Utiliza prefijos en mayúsculas y guiones
+            (`-`) para mantener la jerarquía (ejemplo: `.Component-name` y
+            `.Component-name--modifier`).
+          </li>
+        </ul>
+
+        <div class="text-center my-4">
+          <h2>Ventajas y Desventajas</h2>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ventajas</th>
+                <th>Desventajas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Guiones (`-`)</td>
+                <td>Fácil de leer y consistente con las propiedades de CSS.</td>
+                <td>No estructura jerárquicamente los elementos.</td>
+              </tr>
+              <tr>
+                <td>BEM</td>
+                <td>
+                  Claridad en la relación entre bloques, elementos y
+                  modificadores.
+                </td>
+                <td>Los nombres pueden volverse largos y verbosos.</td>
+              </tr>
+              <tr>
+                <td>Prefijo `js-`</td>
+                <td>Evita conflictos entre CSS y JavaScript.</td>
+                <td>Aumenta la longitud de las clases sin impacto visual.</td>
+              </tr>
+              <tr>
+                <td>Uso del atributo `rel`</td>
+                <td>Separa las responsabilidades de estilo y funcionalidad.</td>
+                <td>Poco común y no ampliamente adoptado.</td>
+              </tr>
+              <tr>
+                <td>OOCSS</td>
+                <td>
+                  Fomenta la reutilización del código y mantiene estilos
+                  escalables.
+                </td>
+                <td>Requiere una mayor planificación inicial.</td>
+              </tr>
+              <tr>
+                <td>SMACSS</td>
+                <td>Facilita la escalabilidad en grandes proyectos.</td>
+                <td>Puede generar sobrecarga en proyectos pequeños.</td>
+              </tr>
+              <tr>
+                <td>SUIT CSS</td>
+                <td>Mejora la legibilidad y estructura de los componentes.</td>
+                <td>Requiere consistencia en el equipo de desarrollo.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
