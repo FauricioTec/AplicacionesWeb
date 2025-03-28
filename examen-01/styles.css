@@ -42,9 +42,26 @@ main {
 #calculator > #result {
     height: 90px;
     background: #4F5B49;
+    padding: 19px 20px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: end;
+}
+
+#result > span {
+    color: #FFF;
+    width: 100%;
+    text-align: right;
+    font-size: 40px;
+}
+
+#digits {
+    margin-top: 23px;
+    padding: 0px 35px;
 }
 
 
 #digits > .row{
-    gap: 24px 25px;
+    gap: 10px
 }
+
