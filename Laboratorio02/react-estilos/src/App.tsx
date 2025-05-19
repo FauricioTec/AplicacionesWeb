@@ -1,5 +1,5 @@
 import "./App.css";
-import { Card } from "./components/Card";
+import Card from "./components/Card";
 import UiverseCard from "./components/uiverse/UiverseCard";
 import UiverseLoader from "./components/uiverse/UiverseLoader";
 import UiverseRadioButton from "./components/uiverse/UiverseRadioButton";

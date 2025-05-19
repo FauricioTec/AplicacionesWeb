@@ -1,13 +1,16 @@
 import type { ReactNode } from "react";
 import styled from "styled-components";
 
-export interface CardProps {
+interface CardProps {
   color: string;
   children?: ReactNode;
   flexDirection?: "row" | "column";
 }
 
-const StyledWrapper = styled.div<{ color: string, flexDirection?: "row" | "column" }>`
+const StyledWrapper = styled.div<{
+  color: string;
+  flexDirection?: "row" | "column";
+}>`
   background-color: ${(props) => props.color};
   border-radius: 8px;
   padding: 16px;
@@ -18,9 +21,9 @@ const StyledWrapper = styled.div<{ color: string, flexDirection?: "row" | "colum
   align-items: center;
 `;
 
-export function Card(props: CardProps) {
+export default function Card(props: CardProps) {
   return (
-    <StyledWrapper color={props.color}>
+    <StyledWrapper color={props.color} flexDirection={props.flexDirection}>
       {props.children}
     </StyledWrapper>
   );
