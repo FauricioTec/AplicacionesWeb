@@ -169,4 +169,4 @@ Tailwind CSS es un framework de clases utilitarias que permite aplicar estilos d
 
 ### Opinión Personal
 
-Lo escogería en proyectos donde se desea no quiera lidiar directamente con codigo CSS.
+Lo escogería en proyectos donde no quiera lidiar directamente con codigo CSS.
